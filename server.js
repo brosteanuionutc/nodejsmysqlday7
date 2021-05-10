@@ -8,7 +8,7 @@ const port = 3000
 app.get('/', (req, res) =>{
 var con = mysql.createConnection({
  host: "localhost",
- user: "root",
+ user: "ionut",
  password: "password",
  database: "test"
 });
