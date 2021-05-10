@@ -6,5 +6,3 @@ ENV MYSQL_PASSWORD=password
 ENV MYSQL_ROOT_PASSWORD=rootpassword
 
 COPY test.sql /etc
-
-EXPOSE 3000
