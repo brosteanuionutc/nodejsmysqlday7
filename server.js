@@ -7,7 +7,7 @@ const app = express()
 const port = 3000
 app.get('/', (req, res) =>{
 var con = mysql.createConnection({
- host: "mysqldb-day7-nodejsmysql.192.168.99.100.nip.io",
+ host: "172.17.0.16",
  user: "ionut",
  password: "password",
  database: "test"
