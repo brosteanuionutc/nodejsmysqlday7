@@ -8,8 +8,5 @@ ENV MYSQL_ROOT_PASSWORD=password
 RUN apt-get update
 RUN apt-get install mysql-server -y
 
-ADD ["test.sql"]
 
 EXPOSE 3000
-
-CMD ["mysqld"]
