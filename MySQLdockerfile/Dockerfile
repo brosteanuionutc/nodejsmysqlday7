@@ -1,4 +1,4 @@
-FROM mysql:8
+FROM mysql:latest
 
 ENV MYSQL_DATABASE=test
 ENV MYSQL_USER=root
@@ -12,4 +12,4 @@ ADD ["test.sql"]
 
 EXPOSE 3000
 
-CMD [“mysqld”]
+CMD ["mysqld"]
