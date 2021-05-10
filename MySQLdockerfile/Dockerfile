@@ -5,7 +5,6 @@ ENV MYSQL_USER=ionut
 ENV MYSQL_PASSWORD=password
 ENV MYSQL_ROOT_PASSWORD=rootpassword
 
-RUN sudo mkdir /sqlfiles
-COPY test.sql /sqlfiles
+COPY test.sql /etc
 
 EXPOSE 3000
