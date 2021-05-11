@@ -8,9 +8,9 @@ const port = 3000
 app.get('/', (req, res) =>{
 var con = mysql.createConnection({
  host: "mysqldb",
- user: "ionut",
- password: "password",
- database: "test"
+ user: process.env.user,
+ password: process.env.password,
+ database: process.env.database
 });
 con.connect(function(err) {
  if (err) throw err;
